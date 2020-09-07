@@ -2,7 +2,7 @@
 
 A web app that locates human faces in a picture.
 
-<img src="screenshot.png">
+<img src="screenshot.png" width="50%">
 
 ## Introduction
 
