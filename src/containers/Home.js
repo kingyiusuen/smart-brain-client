@@ -14,11 +14,16 @@ export default function Home() {
         }
     }
 
-    function displayFaceBox(response) {
+    function displayImage() {
         const image = document.getElementById("inputImage");
         image.src = imageURL;
+    }
+
+    function displayBoundingBoxes(response) {
+        const image = document.getElementById("inputImage");
         const imageWidth = Number(image.width);
         const imageHeight = Number(image.height);
+        console.log(imageWidth, imageHeight);
         const imageDisplayArea = document.getElementById("imageDisplayArea");
         let boxes = document.getElementById("boxes");
         boxes.remove();
@@ -49,7 +54,10 @@ export default function Home() {
             })
         })
             .then(response => response.json())
-            .then(response => displayFaceBox(response))
+            .then(response => {
+                displayImage();
+                displayBoundingBoxes(response);
+            })
             .catch(err => console.log(err));
     }
 
