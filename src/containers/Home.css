@@ -1,0 +1,40 @@
+.Home .lander {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+.Home .lander h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+  
+.Home .lander p {
+    color: #999;
+}
+
+@media all and (min-width: 480px) {  
+    .imageURLForm form {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 480px;
+    }
+}
+
+.Home .result {
+    width: 480px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+div #imageDisplayArea {
+    position: absolute;
+}
+
+.bounding-box {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
