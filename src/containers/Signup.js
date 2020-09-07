@@ -27,7 +27,7 @@ export default function Signup() {
         if (response.ok) {
             history.push('/');
         } else {
-            alert("Error connecting to database");
+            alert("Unable to connect database/Email has been registered");
         }
     }
 

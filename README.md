@@ -13,8 +13,8 @@ The app allows users to input a URL that links to an image and locate the faces 
 The full version of the app is deployed on Heroku and can be found [here](https://smart-brain-ksuen.herokuapp.com/). It requires registration before use. If you want to play around without registering, you can use the following example acount:
 
 ```
-email: guest@example.com
-password: guest
+email: test@example.com
+password: thisisatest
 ```
 
 ## Technologies Used
