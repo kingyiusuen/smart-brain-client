@@ -23,7 +23,6 @@ export default function Home() {
         const image = document.getElementById("inputImage");
         const imageWidth = Number(image.width);
         const imageHeight = Number(image.height);
-        console.log(imageWidth, imageHeight);
         const imageDisplayArea = document.getElementById("imageDisplayArea");
         let boxes = document.getElementById("boxes");
         boxes.remove();
@@ -46,6 +45,7 @@ export default function Home() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        displayImage();
         fetch('https://guarded-brook-59804.herokuapp.com/imageurl', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -55,7 +55,6 @@ export default function Home() {
         })
             .then(response => response.json())
             .then(response => {
-                displayImage();
                 displayBoundingBoxes(response);
             })
             .catch(err => console.log(err));
