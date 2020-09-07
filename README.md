@@ -6,11 +6,11 @@ A web app that locates human faces in a picture.
 
 ## Introduction
 
-This is the front-end part of the app. The code for back-end part is [here](). 
+This is the front-end part of the app. The code for back-end part is [here](https://github.com/kingyiusuen/smart-brain-api). 
 
 The app allows users to input a URL that links to an image and locate the faces that appear in the image with bounding boxes. The API for the face detection algorithm is provided by [Clarifai](https://www.clarifai.com/). 
 
-The full version of the app is deployed on Heroku and can be found [here](). It requires registration before use. If you want to play around without registering, you can use the following example acount:
+The full version of the app is deployed on Heroku and can be found [here](https://guarded-brook-59804.herokuapp.com/). It requires registration before use. If you want to play around without registering, you can use the following example acount:
 
 ```
 email: guest@example.com

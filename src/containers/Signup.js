@@ -15,7 +15,7 @@ export default function Signup() {
 
     async function handleSubmit(event) {
         event.preventDefault();
-        const response = await fetch('http://localhost:3000/register', {
+        const response = await fetch('https://guarded-brook-59804.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

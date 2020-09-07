@@ -41,7 +41,7 @@ export default function Home() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        fetch('http://localhost:3000/imageurl', {
+        fetch('https://guarded-brook-59804.herokuapp.com/imageurl', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
